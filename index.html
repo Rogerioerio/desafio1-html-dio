@@ -1,62 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Página - Módulo I - Primeiros Passos com HTML</title>
+      <style>
+         a:link {
+            text-decoration: none;
+            color: blueviolet;
+         }
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+          .wwwref {
+            font-size: 15px;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+      <sub>Aluno: Rogério Gomes Marcondes</sub>
+      <hr/>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h2 id="indice">Índice</h2>
+      <ul>
+        <li><a href="#historia_html">Surgimento do <i>HTML</i></a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura_html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#linkref">Links de referências</a></li>
+      </ul>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h2 id="historia_html">Surgimento do <i>HTML</i></h2>
+      <p style="font-size: large;">
+         Não é de hojé que a internet no geral, se tornou frequentemente utilizada em pesquisas, montar estratégias, entretenimento,
+         entre outras funcionalidades. E com ela se tornando uma ferramenta requisitada, mas bem nichada por militares e troca de
+         informações, Tim Berners-Lee decidiu criar a <strong><abbr title="World Wide Web">WWW</abbr></strong>, <strong><abbr title="Hypertext Markup Language">HTML</abbr></strong>
+         e o primeiro navegador a suportar <abbr title="World Wide Web">WWW</abbr>. E com isso, foi publicado o primeiro site em <abbr title="Hypertext Markup Language">HTML</abbr> em 6 de agosto de 1991, sendo <strong><u>info.cern.ch</u></strong>
+         foi o primeiro endereço do primeiro site e servidor web.
+      </p>
+      <blockquote cite="https://pt.wikipedia.org/wiki/Tim_Berners-Lee#cite_note-15">
+         <small class="wwwref">
+            <mark style="background-color: blanchedalmond;">"Eu só precisei tomar a ideia de hipertexto e conectá-la às ideias de <br>
+            Transmission Control Protocol e Domain Name System e - ta-da! - a World Wide Web". <br>
+            Berners-Lee, Tim. Answers for Young People. World Wide Web Consortium. Consultado em 25 de maio de 2008</mark>
+         </small>
+      </blockquote>
+      <p>
+         <a id="voltar" href="#indice">^ Voltar</a>
+      </p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h2 id="clients">O que são <i>Clients</i>?</h2>
+      <p style="font-size: large;">
+         <i>Clients</i> são dispositivos que estão <u>consumindo dados de um servidor</u>, tanto via internet, tanto via lan,
+          ou algum outro meio, no caso de um servidor web, os dados são requisitados via navegadores.
+          exemplos de <i>Clients</i>: Computadores, Notebooks e Celulares.
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      </p>
+      <p>
+         <a id="voltar" href="#indice">^ Voltar</a>
+      </p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <h2 id="servers">O que são <i>Servers</i>?</h2>
+      <p style="font-size: large;">
+         <i>Servers</i>, como o nome sugere, <u>serve dados para seus <i>Clients</i></u>, mas também armazenam dados, fazem segurança
+          de requisições, hospedam sites, e etc. <i>Servers</i> são computadores dedicados à estas funções, sendo eles mais caros 
+          que os convecionais, por terem peças muito mais poderosas para serem <u>escalaveis</u>. As requisições são feitas pelos
+          navegadores geralmente, retornando os arquivos <strong>HTML</strong>, que é o que você está vendo do site, <strong>CSS</strong>,
+          para a estilizar a página HTML, e o <strong>Javascript</strong>, que realiza certas funções por baixo dos panos do HTML.
+          Os sistemas operacionais de <i>Servers</i>
+          são amplos, tendo <mark style="background-color: blanchedalmond;">Windows Serve, Ubuntu, CentOs, Debian, Fedora e Oracle Linux</mark>.
+          E como exemplo de Serves temos:
+          <ul>
+            <li>Proxy, Firewall e DNS: Realizam a segurança de requisições.</li>
+            <li>Web Server: Aplicação que não necessita ser instalada, como por exemplo: Youtube.</li>
+            <li>Database e E-mail: Armazenam dados, sendo o E-mail especifico para E-mails e o Database abrangente.</li>
+          </ul>
+      </p>
+      <p>
+         <a id="voltar" href="#indice">^ Voltar</a>
+      </p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+      <h2 id="estrutura_html">Como é uma estrutura básica de um HTML?</h2>
+      <p>
+         Primeiramente, o <u>HTML não é uma linguagem de programação</u>, ela é um arquivo de marcação, como o <u>CSV</u>, com suas marcações criando
+         sua estrutura chamadas de <u><i>Tags</i></u>. Exemplos bons de tags são <i>head</i> e <i>body</i>, sendo <i>head</i> para carregar dados antes de
+         exibir o <i>body</i> que é o corpo da página, onde dentro do body pode ter um texto definido com a tag "<strong>p</strong>", e com
+         tags de formatação como "<strong>h1</strong>" para a definição de um texto, "<strong>strong</strong>" para deixar a letra em negrito
+         e "<strong>i</strong>" em itálico.
+      </p>
+      <p style="font-size: large;">
+         <a id="voltar" href="#indice">^ Voltar</a>
+      </p>
 
-</body>
+      <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+      <p>
+         <u>Listas ordenadas</u> e <u>listas não ordenadas</u> no HTML são tags que listam elementos dentro delas, sendo uma lista ordenada
+            definada pela tag "<strong>ol</strong>" e uma lista não ordenada definida por "<strong>ul</strong>", e os elementos dentro
+            destas listas por "<strong>li</strong>". A diferença entre as duas, é que a lista ordenada ordena por números, sendo o primeiro
+            item o número "1", o segundo o "2" e assim por diante, enquanto a lista não ordenada mostra cada item com um simbolo de elipse
+            no início de cada um.         
+      </p>
+      <p>
+         <a id="voltar" href="#indice">^ Voltar</a>
+      </p>
+
+      <h2 id="linkref">Links de referências</h2>
+      <ul>
+         <li><a target="_blank" href="https://www.dio.me/">https://dio.me</a>></li>
+         <li><a target="_blank" href="https://www.w3.org/">https://w3c.org</a></li>
+         <li><a target="_blank" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">https://pt.wikipedia.org</li>
+      </ul>
+
+   </body>
 </html>
